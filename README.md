@@ -1,6 +1,8 @@
 # Scrubbed Workspace
 
-A workspace for your AI agent with email scrubbed on your computer.
+Scrubbed Workspace gives your AI a separate place to work with email. Your computer removes sensitive details and checks each copy before it goes into that workspace. Your originals stay in your regular inbox.
+
+Start with made-up email. Your agent sets up the workspace, shows you what it can read, and explains why anything was held back. Your real inbox stays disconnected during the demo. You start the agent, and it brings you in only when it needs a decision, sign-in, or permission.
 
 ## Send this to your agent
 
