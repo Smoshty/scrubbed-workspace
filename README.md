@@ -1,29 +1,23 @@
 # Scrubbed Workspace
 
-Give your AI agent a separate place to work with email. Your computer removes sensitive details and checks each copy. Your original email stays in your regular inbox.
-
-This guide is for you. The [playbook](https://github.com/Smoshty/scrubbed-workspace/blob/main/PLAYBOOK.md) is for your agent.
-
-## What you’ll have
-
-1. A workspace your AI can read that contains only checked copies.
-2. A private place to review messages the setup couldn’t safely copy.
-3. A way to check, pause, and resume the workspace.
-
-Your agent shows you how this works with made-up email first. Your real inbox stays disconnected during the demo.
+Give your AI agent a separate workspace for email. Your computer removes sensitive details and checks each copy before the agent can read it. The originals stay in your regular inbox.
 
 ## Get started
 
-1. Open an AI agent that can open folders and run commands on your computer. If you only use AI chat, [Claude Code in the Claude desktop app](https://code.claude.com/docs/en/desktop-quickstart) is one option for getting started.
-2. Paste this request and send it:
+1. Open an AI agent that can open folders and run commands on your computer. If you only use AI chat, [Claude Code in the desktop app](https://code.claude.com/docs/en/desktop-quickstart) is one way to get started.
+2. Paste this request into your agent:
 
 ```text
 Read https://github.com/Smoshty/scrubbed-workspace/blob/main/PLAYBOOK.md and set up a working Scrubbed Workspace for me. Create and organize the project folder yourself. Start with fictional email.
 ```
 
-If the app asks you to choose a folder, pick an existing folder where the agent can create the workspace. The agent handles the technical work from there and asks for help when it needs a decision, sign-in, or permission.
+If your agent asks you to pick a folder, choose an existing folder where it can create the workspace. It handles setup and asks for your help with decisions, sign-ins, or permissions as needed.
 
-## If your agent cannot open the private guide
+## What you’ll see first
+
+Your agent uses made-up email to show you what it can read, where to review anything held back, and how to check or pause the workspace. Your real inbox stays disconnected during the demo. Your practice needs to approve the setup before you connect real mail.
+
+## If your agent can’t open the link
 
 [Download and open the setup ZIP](./scrubbed-workspace-setup.zip?raw=true). Open **Scrubbed Workspace Setup** in your agent and say: “Read PLAYBOOK.md and set up a working Scrubbed Workspace for me.”
 
