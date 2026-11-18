@@ -4,7 +4,9 @@ A workspace for your AI agent with email scrubbed on your computer.
 
 ## Send this to your agent
 
-Open an AI agent that can open folders and run commands on the computer you want to set up. Paste this request and send it.
+**Already have an agent that can open folders and run commands on your computer?** Paste the request below into it.
+
+**Only use AI chat?** First open a local setup session in an agent app. One option is [Claude Code in the Claude desktop app](https://code.claude.com/docs/en/desktop-quickstart). Follow its setup steps, then come back and paste the request.
 
 ```text
 Read https://github.com/Smoshty/scrubbed-workspace/blob/main/PLAYBOOK.md and set up a working Scrubbed Workspace for me. Create and organize the project folder yourself. Start with fictional email.
