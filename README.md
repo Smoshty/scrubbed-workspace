@@ -14,7 +14,7 @@ Your agent shows you how this works with made-up email first. Your real inbox st
 
 ## Get started
 
-1. Open an AI agent that can open folders and run commands on your computer. If you only use AI chat, [Claude Code in the Claude desktop app](https://code.claude.com/docs/en/desktop-quickstart) is one option for getting started.
+1. Open Claude Code or Codex
 2. Paste this request and send it:
 
 ```text
