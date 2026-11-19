@@ -2,7 +2,7 @@
 
 Give your AI agent a separate place to work with email. Your computer removes sensitive details and checks each copy. Your original email stays in your regular inbox.
 
-This guide is for you. The [playbook](https://github.com/Smoshty/scrubbed-workspace/blob/main/PLAYBOOK.md) is for your agent.
+This guide, (README) is for you. The [playbook](https://github.com/Smoshty/scrubbed-workspace/blob/main/PLAYBOOK.md) is for your agent.
 
 ## What you’ll have
 
