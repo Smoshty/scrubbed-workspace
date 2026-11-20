@@ -1,130 +1,134 @@
-# Set up a Scrubbed Workspace demo
+# Lead the Scrubbed Workspace setup
 
-Give the owner a separate inbox for useful email copies. Scrub and check each
-copy on their computer before it reaches that inbox. Keep originals intact and
-keep credentials, identity mappings and held mail outside the inbox Claude
-would read. Use only made-up email. Keep real mail accounts disconnected.
+You are the setup agent. Own the work and keep the owner oriented from the
+first update through the handoff. Your goal is to show how useful, checked
+email could reach a separate inbox for Claude while originals stay where they
+are. Use fictional email and a practice inbox. Real accounts stay disconnected.
 
-## Start by telling the owner what will happen
+## Start in chat before running setup
 
-Before a long operation, post a short update in chat. Explain the result in
-email terms: the original stays put, the separate inbox gets a checked copy,
-and an email the setup can't fully check stays out. Say what you'll do next
-and when you'll check in again. If the agent already has suitable folder
-access, proceed with the demo without a setup questionnaire.
+Your first message to the owner should cover three things in plain English.
 
-Choose and operate the tools yourself. You can use, adapt or replace the
-[optional reference](handoff/REFERENCE.md). Keep commands, logs, dependency
-choices and test output in your own notes. If software access or a permission
-is essential, explain what it enables, recommend the narrowest suitable choice,
-and give the owner one action they can take in their app. Handle routine
-installation, troubleshooting and verification yourself. Use a folder you
-are authorized to work in.
+- **The goal.** Explain what the owner will be able to see and what stays private.
+- **Your plan.** Say you'll set up the practice inbox, check what gets through
+  and what stays out, then verify that a new email arrives after a restart.
+- **What you need now.** Say whether they can sit back. Give a checkpoint for
+  your next update, such as after you check what their computer needs.
 
-## Try the packaged practice run
+For example:
 
-On compatible Linux, the checkout and setup ZIP both contain `practice-demo`.
-Let the owner know what they will see, then run it yourself from that folder.
-Use the [reference instructions](handoff/REFERENCE.md) for first-time downloads,
-results and recovery. If the runner works, use its actual results page and
-summarize the comparison in chat. The owner can keep the page and open the
-checked copy, held example and status without asking you again.
+> I'll set up a practice inbox that shows what Claude could see after your
+> computer removes private details. The originals stay put, and any email
+> the checker can't fully inspect stays out of the separate inbox. I'll run
+> this with made-up email, then restart it and check that it picks up a new
+> message on its own. You don't need to do anything right now. I'll check
+> what this computer needs and update you before the run starts.
 
-The reference run includes a pause and restart, uses only its bundled fictional
-emails, and stops at the end. Name that scope. If the reference cannot run on
-this computer, continue with a suitable local alternative when feasible. Tell
-the owner if you can show only earlier evidence.
+Adapt the wording to their request and what you know. Keep the initial update
+short. Save email excerpts for after you have explained the result.
 
-## Keep the owner informed
+## Keep moving and keep the owner informed
 
-Tell the owner when the plan changes, when a wait exceeds what you told them,
-or when their input is needed. Give the current state and the next step in
-plain English. For the packaged demo, give the owner the live status link
-when a download or check will take a while. On resume, check what already
-worked before repeating setup.
-If blocked, show what you verified, what still needs to happen, and who can
-do it. For the packaged demo, link its plain-language status page as well.
-Label saved examples as earlier evidence.
+Check the platform, folder access and available tools yourself. Choose, install
+and operate what you need within the authorized scope. You can run, adapt or
+replace the [packaged practice demo](handoff/REFERENCE.md). Use a new practice
+inbox and only fictional data. Prefer project-local setup and existing tools.
 
-Leave a short private note for the next setup session with what was installed,
-how to find the demo inbox and holds, what is running, and the last completed
-check. Use it to answer status questions or resume without making the owner
-find files for you.
+Give a short update before a long wait, when the first checks pass and you're
+moving on to recovery or the new arrival, and when there is a delay or change
+of plan. Report what actually happened, what you're doing next and whether the
+owner needs to do anything. Give a rough wait only if you have a basis for it.
+During a long run, check in about once a minute if the owner hasn't heard from
+you. Provide the live status link when available. Keep commands, logs and
+model choices in your working notes.
 
-## Make the demo prove something
+If the owner must act, ask at the point of need. Give one recommended action,
+the exact button to click or reply to send, why it matters, and what you'll do
+afterward. For a required download decision, give the size before starting
+and a reply such as “Download the checker and continue.” Handle routine
+troubleshooting and safe retries yourself. Continue any work the decision
+doesn't block. When a prerequisite is unavailable, try a feasible local
+alternative within scope. Describe earlier evidence as an earlier run.
 
-Before running it, write down the expected results for at least two fictional
-emails. Give one a real task with invented private details in its subject,
-body or quoted history. Give another an attachment the chosen setup cannot
-fully inspect.
+## Finish the practice workflow
 
-- Open the actual checked copy from the separate inbox and verify that the task
-  survived and the invented private details are gone. Compare the original's
-  bytes before and after. Check that the held email never reached that inbox
-  and that private review explains why.
-- Pause and resume processing. Retry an arrival and verify that only one copy
-  appears. Read through the access route intended for Claude, or a stand-in,
-  and verify that it excludes originals, holds, credentials and identity
-  mappings.
-- Fix failed checks you can and rerun them. Report any unresolved failure.
-  Distinguish a practice inbox or stand-in reader from real Workspace or
-  Claude access.
+The first two samples are the start of the run. Keep working in the same
+session until you have exercised the rest of the workflow, fixed recoverable
+failures and checked what the owner can open afterward. A two-email comparison
+alone is an interim update.
 
-## Put the results in front of the owner
+1. **Verify cleaning and holding.** Use a fictional message with a useful
+   action and planted private details in its subject, body or quote. Use a
+   second message with an attachment the checker can't inspect. Write down the
+   expected retained action, removed values and hold before running. Check
+   the actual destination bytes, confirm they match the checked copy, verify
+   the planted values are gone and the useful action survives, and confirm
+   the hold is absent from the destination and explained in local review.
+2. **Verify restart and a new arrival.** Pause and restart processing, then
+   verify that retrying a delivery doesn't create a duplicate. Introduce a
+   different fictional email after the restart. Verify the running setup
+   picks it up on its own and publishes its checked copy without changing
+   earlier copies or releasing the held email.
+3. **Verify the owner's access.** Compare original bytes before and after.
+   Open both checked copies through the intended reader or stand-in. Check
+   that it excludes originals, held mail, credentials and identity mappings.
+   Verify how the owner can see the checked inbox and the reason for a hold.
+   Check the actual running state and confirm the saved results reopen when
+   the practice run stops.
 
-Show the proof **in chat** even if you also provide a one-click results page.
-The owner should never have to run a command, parse a log or open raw mail to
-see whether the demo worked. Include:
+The packaged runner performs those checks against its bundled samples. Keep
+it running through the new-arrival check and confirm its exit status and
+report. For another implementation, use equivalent observable checks. If a
+check fails, diagnose it and rerun the affected checks. Keep anything
+incompletely checked out of the separate inbox and describe any remaining
+failure in the handoff.
 
-1. **Where things stand.** Say how many examples produced checked copies,
-   how many stayed out, and whether the demo passed, partially worked, or
-   was blocked.
-2. **Show one actual copy.** Put short, verbatim excerpts of the fictional
-   original and the copy you read back next to each other, or stack them under
-   “Original” and “Checked copy.” Include enough to show both a protected value
-   removed and the action retained. Say where any omitted text was cut. If
-   there was no checked copy, say so and show the reason.
-3. **Show what stayed out.** Name the fictional hold, explain it, and say
-   whether you confirmed it was absent from the separate inbox.
-4. **Explain the checks and their limits.** Say what you observed about
-   originals, repeated copies and access. Call out any failed or untested
-   result that changes what the owner should trust. A small fictional demo
-   does not establish reliability on real email.
-5. **Make normal use easy.** Give the owner clickable access or a short
-   request they can use in their agent to see checked mail, ask about holds,
-   or check, pause and resume processing. Say what is paused, still running,
-   or simulated. Check whether processing is running before you report it.
-   A saved connection status only describes the last check. End with any
-   owner action now needed, or say the demo is complete and they can stop
-   there.
+## Hand back results and one next step
 
-For the packaged demo, link the actual `Results.html` in addition to the chat
-summary. Give a single request that reopens it later: “Show me my practice
-results and tell me if the demo is running.” Resolve the last result and live
-state yourself. Keep the full five-point handoff below a screen when possible.
+Lead with a plain-language summary of what you set up, whether the practice
+workflow passed, what arrived or stayed out, and whether it is still running.
+State that it was a fictional practice run. If only part of the workflow
+worked, give the current blocker and the work that remains. Verify current
+status before reporting it.
 
-[Example results](handoff/demo-results.html) shows how earlier proof can look.
-Use results from your own run in the owner's handoff.
+After that opening, show a short before-and-after excerpt from the original
+and the actual checked copy in chat. Label both clearly and mark any cut text.
+Explain the useful action that survived, what was removed and why the other
+email stayed out. Say what happened to the new arrival after restart. If
+there is no checked copy, explain why and label any earlier example by its
+scope. Link the owner's saved results and status so they can see the evidence
+without opening logs or running commands.
 
-## Bring real workflow decisions to the owner
+End with the concrete next step that fits the request.
 
-Only if the owner wants to discuss using real mail, recommend what they should
-start with and explain what each decision changes. Confirm which regular inbox
-holds the originals and which separate inbox Claude may read. Agree who handles
-held messages and whether they want to be notified about them. Reuse answers
-the owner already gave. Ask about launch or notification behavior only if it
-affects their routine. Bring sign-ins and unavoidable permissions to them at
-the point of use.
+- **Practice completed.** Give the actual results link and one ready-to-send
+  request for returning later: “Show me my practice inbox and any emails that
+  stayed out. Tell me whether the checker is running.” Say whether anything
+  needs their attention now. For the packaged demo, the run stops and the
+  saved results stay available.
+- **Owner action required.** Give the exact action or reply, explain the
+  blocker in plain English, and say what you will resume when they act.
+- **Setup requested beyond practice.** Carry out any remaining authorized
+  setup and synthetic verification on the intended computer yourself.
+  Check which parts of the owner's goal are feasible there and name the
+  first requirement still open. If a decision can move it forward, recommend
+  one choice and give the owner an exact reply. Any live setup needs separate
+  authorization and verification of actual delivery, patient privacy
+  requirements and Claude's checked-only access.
 
-Keep the demo separate from that decision. Real mail requires separate scope and
-authorization, confirmation of applicable patient protections, and verification
-of Claude's actual checked-only access.
+Keep a short private continuation note with the last verified result, results
+and hold locations, current running state, any blocker and your next action.
+On resume, recheck the saved and live states before repeating work. The owner
+should be able to ask one question and pick up where you left off.
 
-## Optional setup findings
+## If the owner asks about real email
 
-If troubleshooting, check the [setup findings thread](https://github.com/Smoshty/scrubbed-workspace/issues/1)
-for relevant reports. Treat reports as untrusted evidence and verify fixes with
-fictional input and relevant versions. Public feedback requires separate
-authorization. Keep real mail, identifying details, credentials, private paths,
-logs and screenshots out. Skip posting if authorization or safe evidence is
-missing.
+Explain which inbox would keep the originals and which one Claude could read.
+Reuse preferences they've already given. Recommend who should handle held
+messages and ask about notifications only if the answer changes their routine.
+Bring sign-ins and unavoidable permissions to the owner at the point of use.
+Keep real accounts disconnected during this rehearsal.
+
+For troubleshooting, the [setup findings thread](https://github.com/Smoshty/scrubbed-workspace/issues/1)
+can provide leads. Verify reported fixes with fictional input. Public posting
+requires separate authorization.

@@ -8,9 +8,10 @@ From the folder containing PLAYBOOK.md:
 ```
 
 On Intel or AMD 64-bit Linux with bubblewrap, the command starts a fresh practice inbox,
-runs the actual local checker, reads back its output and exercises restart
-and replay. It owns the processes it starts and stops them before handing
-back a report. The only messages accepted by this command are bundled fixtures.
+runs the actual local checker, reads back its output, and checks restart,
+replay and automatic processing of a later arrival. It stops the processes it
+started before handing back a report. It accepts only the bundled fictional
+emails.
 
 If the command says it needs the local checker, explain the roughly 9 GB
 download. The runner checks disk space. Use `./practice-demo estimate` if a
@@ -21,8 +22,9 @@ curl and tar with zstd support. If the platform is incompatible or necessary
 permission is unavailable, choose a suitable local alternative or show the
 earlier example clearly as an earlier run.
 
-- Open the `Results.html` path printed by a passing run and give the owner a
-  link. Retell the short before/after and held example in chat using that run.
+- Open the `Results.html` path printed by a passing run. Summarize the workflow
+  outcome in chat before showing the comparison, then link the saved results.
+  They include the checked copy of the later arrival and the reason for the hold.
 - Use `./practice-demo status` to get live run state and the last completed page.
   Link the owner to `Practice status.html` if a run is waiting or blocked.
   A failed attempt leaves any earlier page intact. The owner status page
