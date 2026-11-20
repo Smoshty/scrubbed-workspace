@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scrubbed Workspace · Example results</title>
+<style>
+  :root {
+    color-scheme: light;
+    font: 17px/1.55 system-ui, sans-serif;
+    color: #1b2926;
+    background: #f4f7f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  main { max-width: 62rem; margin: auto; padding: clamp(1rem, 5vw, 3rem); }
+  header { padding: 1.4rem 0 1.6rem; border-bottom: 1px solid #b9cac3; }
+  h1, h2, h3, p { margin: 0; }
+  h1, h2 { line-height: 1.15; }
+  h1 { font-size: clamp(2rem, 6vw, 3.2rem); letter-spacing: -.04em; }
+  h2 { font-size: 1.5rem; letter-spacing: -.025em; }
+  h3 { font-size: 1rem; }
+  p { margin-top: .6rem; }
+  section { margin-top: 2rem; }
+  .example { color: #3b544c; font-size: .92rem; }
+  .summary, .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: .85rem; }
+  .summary { margin: 1.3rem 0 0; }
+  .summary div { padding: .8rem 1rem; border-radius: .6rem; background: #e3eee8; }
+  .summary dt { font-size: 1.65rem; line-height: 1.1; font-weight: 700; }
+  .summary dd { margin: 0; }
+  .comparison { margin-top: .85rem; }
+  .mail, .hold { border: 1px solid #b9cac3; background: white; border-radius: .7rem; padding: 1rem; }
+  .mail h3 { border-bottom: 1px solid #dbe4df; padding-bottom: .5rem; }
+  .mail:last-child { border-color: #63937e; }
+  .message { overflow-wrap: anywhere; }
+  .message p { white-space: pre-wrap; }
+  .subject { font-weight: 600; }
+  .removal { background: #f8e4bd; color: #49310e; padding: 0 .1rem; }
+  .replacement { background: #d7eee1; color: #134536; padding: 0 .1rem; }
+  .hold { margin-top: .8rem; }
+  ul { padding-left: 1.4rem; }
+  li + li { margin-top: .45rem; }
+  details { margin-top: 1rem; padding-top: .7rem; border-top: 1px solid #b9cac3; }
+  summary { cursor: pointer; font-weight: 600; }
+  a { color: #14533e; }
+  :focus-visible { outline: 3px solid #14533e; outline-offset: 3px; }
+  @media (max-width: 40rem) { .comparison { grid-template-columns: 1fr; } }
+  @media print {
+    :root { color: black; background: white; font-size: 11pt; }
+    main { padding: 0; }
+    .mail, .hold { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="example">Scrubbed Workspace · Earlier test with made-up email</p>
+    <h1>What reached the practice inbox</h1>
+    <p>Four emails reached the separate inbox after checking. One stayed out because it included an image the setup could not check. All five originals stayed unchanged.</p>
+    <dl class="summary">
+      <div><dt>4</dt><dd>checked copies</dd></div>
+      <div><dt>1</dt><dd>held email</dd></div>
+    </dl>
+  </header>
+
+  <section aria-labelledby="compare">
+    <h2 id="compare">The request survived</h2>
+    <p>The name, date of birth and record number became placeholders. The checked copy still asks someone to confirm that the handout is ready.</p>
+    <div class="comparison">
+      <article class="mail">
+        <h3>Fictional original</h3>
+        <div class="message">
+          <p class="subject">Patient <mark class="removal">Esme Rosecroft</mark> DOB <mark class="removal">07/23/1981</mark></p>
+          <p>Patient <mark class="removal">Esme Rosecroft</mark> needs a replacement handout.</p>
+          <p>&gt; Prior note: Patient <mark class="removal">Esme Rosecroft</mark>, <mark class="removal">MRN 482771</mark>, needs a callback.
+Please confirm the handout is ready.</p>
+        </div>
+      </article>
+      <article class="mail">
+        <h3>Checked copy from the inbox</h3>
+        <div class="message">
+          <p class="subject">Patient <mark class="replacement">[PERSON_01]</mark> DOB <mark class="replacement">[ID_01]</mark></p>
+          <p>Reported sender (unverified): <mark class="replacement">[PERSON_01]</mark></p>
+          <p>Patient <mark class="replacement">[PERSON_01]</mark> needs a replacement handout.</p>
+          <p>&gt; Prior note: Patient <mark class="replacement">[PERSON_01]</mark>, <mark class="replacement">[ID_02]</mark>, needs a callback.
+Please confirm the handout is ready.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="held">
+    <h2 id="held">The image stayed out</h2>
+    <article class="hold">
+      <h3>“Attached image”</h3>
+      <p>The setup could not check the image, so it held the whole email. The test confirmed that no copy reached the separate inbox.</p>
+    </article>
+  </section>
+
+  <section aria-labelledby="trust">
+    <h2 id="trust">What this test tells you</h2>
+    <ul>
+      <li>The test reopened the inbox copies and confirmed they were the same copies the computer had checked.</li>
+      <li>When processing restarted and an email arrived again, the separate inbox still had one copy per eligible email.</li>
+      <li>The separate practice reader showed only checked copies. It did not show the held email or give access to the original.</li>
+    </ul>
+    <p>This was a practice inbox with a stand-in reader for Claude. Real inbox delivery and Claude access still need their own checks.</p>
+    <details>
+      <summary>What happened in a larger test?</summary>
+      <p>In a separate 100-email test, 95 met expectations. Four emails that should have made it to the inbox were held. One copy lost a word it needed. Later tests checked fixes for specific examples. The larger test has not been repeated as a whole.</p>
+    </details>
+  </section>
+</main>
+</body>
+</html>
