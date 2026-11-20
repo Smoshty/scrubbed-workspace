@@ -1,46 +1,30 @@
 # Scrubbed Workspace
 
-The goal is to give Claude a separate inbox for useful email. Your computer
-cleans and checks each copy first. Originals stay in your regular inbox.
-If the checker can't inspect the whole email, it keeps that email out of
-Claude's inbox.
+Give your AI agent a separate place to work with email. Your computer removes sensitive details and checks each copy. Your original email stays in your regular inbox.
 
-## Start with one message
+This guide, (README) is for you. The [playbook](https://github.com/Smoshty/scrubbed-workspace/blob/main/PLAYBOOK.md) is for your agent.
 
-Open Codex or Claude Code and send this request:
+## What you’ll have
 
-> Download https://github.com/Smoshty/scrubbed-workspace/raw/main/scrubbed-workspace-setup.zip
-> and read PLAYBOOK.md inside. Lead me through the fictional Scrubbed Workspace
-> setup. Start by telling me the goal, what you'll do, and whether you need
-> anything from me. Keep me updated and finish the practice workflow, including
-> a new arrival after restart. Then show me what worked and exactly what to do next.
+1. A workspace your AI can read that contains only checked copies.
+2. A private place to review messages the setup couldn’t safely copy.
+3. A way to check, pause, and resume the workspace.
 
-Your agent handles the setup and checks. The practice run uses fictional email
-and keeps real accounts disconnected. If the agent needs something from you,
-it will explain why and give you the exact action to take.
+Your agent shows you how this works with made-up email first. Your real inbox stays disconnected during the demo.
 
-[Download the ZIP yourself](scrubbed-workspace-setup.zip?raw=true) if your agent
-can't open the link. Give it the ZIP or open the extracted folder in your app
-and copy the request from **Start here.html**.
+## Get started
 
-## What to expect
+1. Open Claude Code or Codex
+2. Paste this request and send it:
 
-Your agent explains the plan, checks in during the run and gives you a summary
-with a link to your results. You can revisit the checked copies and see why an
-email stayed out after the practice run stops.
+```text
+Read https://github.com/Smoshty/scrubbed-workspace/blob/main/PLAYBOOK.md and set up a working Scrubbed Workspace for me. Create and organize the project folder yourself. Start with fictional email.
+```
 
-The included demo runs on compatible Linux computers. A first installation can
-require about 9 GB of downloads and 14 GB of free space. Your agent checks what
-the computer needs before downloading.
+If the app asks you to choose a folder, pick an existing folder where the agent can create the workspace. The agent handles the technical work from there and asks for help when it needs a decision, sign-in, or permission.
 
-<details>
-<summary>First time using a setup agent?</summary>
+## If your agent can’t open the link
 
-If you have Codex, open a practice folder there. To use Claude Code, follow the
-desktop setup guide, then open the Claude app and choose **Code**.
-The Code tab requires a paid Claude plan.
-[Claude desktop setup guide](https://code.claude.com/docs/en/desktop-quickstart)
+[Download and open the setup ZIP](./scrubbed-workspace-setup.zip?raw=true). Open **Scrubbed Workspace Setup** in your agent and say: “Read PLAYBOOK.md and set up a working Scrubbed Workspace for me.”
 
-</details>
-
-[See an earlier practice result](handoff/demo-results.html) · [Agent playbook](PLAYBOOK.md)
+If you need help getting your agent ready, reply to the person who sent you this guide.
