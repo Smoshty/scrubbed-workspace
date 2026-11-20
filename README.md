@@ -1,6 +1,6 @@
 # Scrubbed Workspace
 
-Give your AI agent a separate place to work with email. Your computer removes sensitive details, original emails stay in your regular inbox.
+Give your AI agent a separate place to work with email. Your computer removes sensitive details, original emails stay untouched in your regular inbox.
 
 This guide, (README) is for you. The [playbook](https://github.com/Smoshty/scrubbed-workspace/blob/main/PLAYBOOK.md) is for your agent.
 
